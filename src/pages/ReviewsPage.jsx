@@ -1,16 +1,17 @@
 import { useApp } from "../context/AppContext";
+import ReviewForm from "../components/ReviewForm";
 
-export default function MenuPage() {
-  const { pizzas } = useApp();
+export default function ReviewsPage() {
+  const { reviews } = useApp();
 
   return (
     <div>
-      <h2>Menu</h2>
-      {pizzas.map(p => (
-        <div key={p.id}>
-          <h3>{p.name}</h3>
-          <p>{p.description}</p>
-          <p>${p.price}</p>
+      <h2>Reviews</h2>
+      <ReviewForm />
+      {reviews.map((r) => (
+        <div key={r.id}>
+          <h3>{r.name}</h3>
+          <p>{r.comment}</p>
         </div>
       ))}
     </div>
