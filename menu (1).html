@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Legends & Lore Pizza Company</title>
+  <link rel="stylesheet" href="menustyles.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="#" class="logo">legends and lore pizza</a>
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Legends & Lore Pizza Company</h1>
+    <p>Provisions for Heroes</p>
+  </header>
+
+  <main class="about-container">
+    <section class="about">
+      <h2>Our Legendary Pizzas</h2>
+
+      <!-- Dynamic menu items go here -->
+      <div id="menu-container"></div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Legends & Lore Pizza Company — All Legends Start With a Good Meal</p>
+  </footer>
+
+  <script>
+    fetch("http://localhost:3000/pizzas")
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById("menu-container");
+
+        data.forEach(pizza => {
+          const item = document.createElement("div");
+          item.classList.add("menu-item");
+
+          item.innerHTML = `
+            <img src="${pizza.image}" alt="${pizza.name}">
+            <div class="menu-text">
+              <h3>${pizza.name}</h3>
+              <p class="subtitle">${pizza.subtitle}</p>
+              <p>
+                ${pizza.description} [${pizza.price.toFixed(2)}]
+              </p>
+            </div>
+          `;
+
+          container.appendChild(item);
+        });
+      })
+      .catch(error => console.error("Error loading menu:", error));
+  </script>
+
+</body>
+</html>

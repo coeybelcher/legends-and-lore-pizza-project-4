@@ -1,0 +1,55 @@
+{
+  "pizzas": [
+    {
+      "id": 1,
+      "name": "Dragon’s Hearth",
+      "subtitle": "Classic Cheese Pizza",
+      "description": "Fire-baked, warm, and legendary. A timeless blend of melted mozzarella and our house-crafted sauce, forged in the heart of the oven.",
+      "price": 9.99,
+      "image": "imegies/dragons hearth pizza.png"
+    },
+    {
+      "id": 2,
+      "name": "The War Banner",
+      "subtitle": "Pepperoni Pizza",
+      "description": "Red pepperoni sigils flying over rivers of melted gold cheese. A bold standard raised for those who hunger for battle.",
+      "price": 12.99,
+      "image": "imegies/the war banner pizza.png"
+    },
+    {
+      "id": 3,
+      "name": "Beastslayer’s Bounty",
+      "subtitle": "Meat Lover’s Pizza",
+      "description": "Meats gathered from many fallen foes. A mighty feast of sausage, pepperoni, bacon, and ham — not for the faint of heart.",
+      "price": 15.99,
+      "image": "imegies/beastslayers pizza.png"
+    }
+  ],
+  "reviews": [
+    { "id": 1, "name": "Sir Galen", "rating": 5, "comment": "The Dragon’s Hearth restored my strength!" },
+    { "id": 2, "name": "Lady Elowen", "rating": 4, "comment": "A feast worthy of royalty." },
+    { "id": 3, "name": "Thorin Ironbelly", "rating": 5, "comment": "Best pizza in the realm!" },
+    { "id": 4, "name": "Mira Swiftarrow", "rating": 5, "comment": "Perfect after a long hunt." },
+    { "id": 5, "name": "Cedric the Bold", "rating": 4, "comment": "Hot and fresh from the forge." },
+    { "id": 6, "name": "Arkon Flameborn", "rating": 5, "comment": "Legendary flavor!" },
+    { "id": 7, "name": "Borin Stonehelm", "rating": 5, "comment": "A dwarf-approved feast." },
+    { "id": 8, "name": "Selene Moonfall", "rating": 4, "comment": "Light, flavorful, magical." },
+    { "id": 9, "name": "Ragnar Wolfheart", "rating": 5, "comment": "Warriors need this pizza." },
+    { "id": 10, "name": "Eldon the Wise", "rating": 4, "comment": "Balanced like ancient magic." },
+    { "id": 11, "name": "Kael Stormblade", "rating": 5, "comment": "I return after every battle." },
+    { "id": 12, "name": "Lyra Starwind", "rating": 5, "comment": "Absolutely enchanting." },
+    { "id": 13, "name": "Doran Blackhammer", "rating": 4, "comment": "Strong flavors, strong pizza." },
+    { "id": 14, "name": "Fenrir Greyfang", "rating": 5, "comment": "Even wolves approve." },
+    { "id": 15, "name": "Talia Emberfall", "rating": 5, "comment": "The cheese is divine." },
+    { "id": 16, "name": "Rowan Oakshield", "rating": 4, "comment": "A hero’s reward." },
+    { "id": 17, "name": "Valen Nightstrike", "rating": 5, "comment": "Stealthily delicious." },
+    { "id": 18, "name": "Garrick Ironhand", "rating": 5, "comment": "Forged to perfection." },
+    { "id": 19, "name": "Seraphine Dawn", "rating": 4, "comment": "Bright flavors and warmth." },
+    { "id": 20, "name": "Ulric Stormborn", "rating": 5, "comment": "A legendary meal." },
+    { "id": 21, "name": "Nyx Shadowveil", "rating": 5, "comment": "I sneak here every night." },
+    { "id": 22, "name": "Bram Thornwood", "rating": 4, "comment": "Fresh and hearty." },
+    { "id": 23, "name": "Kara Flamesong", "rating": 5, "comment": "Sings to my soul." },
+    { "id": 24, "name": "Orin Deepdelver", "rating": 5, "comment": "Worth leaving the mines for." },
+    { "id": 25, "name": "Helena Brightblade", "rating": 5, "comment": "My favorite tavern stop." }
+  ]
+}
