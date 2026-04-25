@@ -5,12 +5,11 @@ const menuRoutes = require("./src/routes/menuRoutes");
 const reviewRoutes = require("./src/routes/reviewRoutes");
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
 
-// Routes
 app.use("/api/menu", menuRoutes);
 app.use("/api/reviews", reviewRoutes);
 
@@ -19,5 +18,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
