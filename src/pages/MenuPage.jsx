@@ -1,22 +1,12 @@
-import { useApp } from "../context/AppContext";
+import Menu from "../components/Menu";
 
-export default function MenuPage() {
-  const { pizzas } = useApp();
-
+function MenuPage() {
   return (
-    <div className="page">
-      <h2>Menu</h2>
-
-      <div className="card-grid">
-        {pizzas.map((p) => (
-          <div className="card" key={p.id}>
-            <img src={p.image} alt={p.name} className="pizza-img" />
-            <h3>{p.name}</h3>
-            <p>{p.description}</p>
-            <p><strong>${p.price}</strong></p>
-          </div>
-        ))}
-      </div>
+    <div>
+      <h1>Menu</h1>
+      <Menu />
     </div>
   );
 }
+
+export default MenuPage;

@@ -1,0 +1,23 @@
+const express = require("express");
+const cors = require("cors");
+
+const menuRoutes = require("./routes/menuRoutes");
+const reviewRoutes = require("./routes/reviewRoutes");
+
+const app = express();
+const PORT = 3001;
+
+app.use(cors());
+app.use(express.json());
+
+// Routes
+app.use("/api/menu", menuRoutes);
+app.use("/api/reviews", reviewRoutes);
+
+app.get("/", (req, res) => {
+  res.json({ message: "Backend is running 🔥" });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
